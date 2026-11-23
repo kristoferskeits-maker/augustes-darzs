@@ -19,9 +19,6 @@ Nav ne datubāzes, ne "build" soļa — ko ieraksti failā, tas parādās lapā.
 
 - **Teksts** (cenas, kontakti, jautājumi) — atver `index.html`, atrodi vajadzīgo
   sadaļu (katrai ir komentārs, piem. `<!-- IEEJAS MAKSA -->`) un labo tekstu.
-- **"Kas šobrīd notiek dārzā?"** — Lauras rediģējamā josla. Atrodi sadaļu
-  `<!-- KAS ŠOBRĪD NOTIEK DĀRZĀ -->`, nomaini tekstu un datumu `Atjaunots: ...`.
-  Vairāk nekas nav jāmaina.
 - **Sezonas statuss** (uzraksts hero daļā) — `script.js` rindā
   `const OVERRIDE = "AUTO";`. Iespējamās vērtības:
   - `"AUTO"` — aprēķinās pēc datuma: atvērts 23. jūlijs–15. oktobris,
