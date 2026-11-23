@@ -2,6 +2,8 @@
    AuGustes iedvesmas dārzs — skripts
    ============================================================ */
 
+document.documentElement.classList.add("js");
+
 /* ----- SEZONAS STATUSS (hero pills) ------------------------
    Aprēķinās automātiski (sezona ~23. jūlijs līdz 15. oktobris).
    Lai uzstādītu manuāli, nomaini AUTO uz "open" vai "closed":
@@ -38,14 +40,26 @@ function seasonStatus() {
   if (!track || !prev || !next) return;
   const step = () => {
     const item = track.querySelector(".g-item");
-    return item ? item.getBoundingClientRect().width + 22 : 300;
+    return item ? item.getBoundingClientRect().width + 18 : 300;
   };
   next.addEventListener("click", () => track.scrollBy({ left: step(), behavior: "smooth" }));
   prev.addEventListener("click", () => track.scrollBy({ left: -step(), behavior: "smooth" }));
 })();
 
-/* ----- FAQ: rādīt visus jautājumus ----- */
-(function faq() {
+/* ----- BUJ: animēta atvēršana un “+” → “–” ----- */
+(function faqAccordion() {
+  document.querySelectorAll(".faq-q").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const item = btn.closest(".faq-item");
+      if (!item) return;
+      const open = item.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  });
+})();
+
+/* ----- BUJ: rādīt visus jautājumus ----- */
+(function faqMore() {
   const btn = document.getElementById("faq-more");
   const list = document.querySelector(".faq-list");
   if (btn && list) btn.addEventListener("click", () => list.classList.add("show-all"));

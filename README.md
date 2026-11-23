@@ -1,6 +1,8 @@
 # AuGustes iedvesmas dārzs — mājaslapa
 
-Vienkārša, statiska informatīva vietne, kas paredzēta publicēšanai ar **GitHub Pages**.
+Vienkārša, statiska informatīva vietne, kas publicēta ar **GitHub Pages**.
+
+**Lapa tiešsaistē:** https://kristoferskeits-maker.github.io/augustes-darzs/
 
 ## Faili
 
@@ -8,32 +10,49 @@ Vienkārša, statiska informatīva vietne, kas paredzēta publicēšanai ar **Gi
 |-------|---------|
 | `index.html` | Visa lapa (teksts, sadaļas) |
 | `styles.css` | Noformējums un krāsas |
-| `script.js` | Sezonas statuss, mobilā izvēlne |
+| `script.js` | Sezonas statuss, BUJ atvēršana, mobilā izvēlne |
 | `images/` | Fotogrāfijas un logo (skat. `images/README.txt`) |
+
+Nav ne datubāzes, ne "build" soļa — ko ieraksti failā, tas parādās lapā.
 
 ## Kā rediģēt saturu
 
-- **Teksts** (cenas, kontakti, FAQ) — atver `index.html`, atrodi vajadzīgo sadaļu (katrai ir komentārs, piem. `<!-- IEEJAS MAKSA -->`) un labo tekstu.
-- **"Kas šobrīd notiek dārzā?"** — Lauras rediģējamā josla. Atrodi `index.html` sadaļu `<!-- ŠOBRĪD DĀRZĀ -->`, nomaini tekstu un datumu `Atjaunots: ...`. Vairāk nekā nekas nav jāmaina.
-- **Sezonas statuss (hero pogā)** — `script.js` rindā `const OVERRIDE = "AUTO";`. Iespējamās vērtības:
-  - `"AUTO"` — aprēķinās pēc datuma (atvērts ~23. jūlijs–15. oktobris). **Šobrīd iestatīts.**
+- **Teksts** (cenas, kontakti, jautājumi) — atver `index.html`, atrodi vajadzīgo
+  sadaļu (katrai ir komentārs, piem. `<!-- IEEJAS MAKSA -->`) un labo tekstu.
+- **"Kas šobrīd notiek dārzā?"** — Lauras rediģējamā josla. Atrodi sadaļu
+  `<!-- KAS ŠOBRĪD NOTIEK DĀRZĀ -->`, nomaini tekstu un datumu `Atjaunots: ...`.
+  Vairāk nekas nav jāmaina.
+- **Sezonas statuss** (uzraksts hero daļā) — `script.js` rindā
+  `const OVERRIDE = "AUTO";`. Iespējamās vērtības:
+  - `"AUTO"` — aprēķinās pēc datuma: atvērts 23. jūlijs–15. oktobris,
+    pārējā laikā "Ziemā slēgts". **Šobrīd iestatīts.**
   - `"open"` — vienmēr rāda "Šodien atvērts 11–17"
   - `"closed"` — vienmēr rāda "Ziemā slēgts · tiekamies vasarā"
-- **FAQ** — jautājumi atrodas `index.html` sadaļā `<!-- FAQ -->`. Pirmie 6 redzami uzreiz, pārējie parādās pēc pogas "Skatīt visus jautājumus".
-- **Foto** — ieliec attēlus mapē `images/` (skat. `images/README.txt`).
 
-> **Piezīme:** pašreizējās fotogrāfijas ir pagaidu (bezmaksas no Unsplash), lai redzētu, kā lapa izskatās. Aizstāj tās ar īstajām dārza bildēm, saglabājot tos pašus failu nosaukumus.
+  Sezonas datumus var mainīt turpat funkcijā `seasonStatus()`.
+- **BUJ** — jautājumi atrodas `index.html` sadaļā `<!-- BUJ -->`. Pirmie 6
+  redzami uzreiz, pārējie parādās pēc pogas "Skatīt visus jautājumus".
+  Pievienojot jaunu jautājumu, nokopē veselu `<div class="faq-item">` bloku
+  un nomaini numurus `buj-q…` / `buj-a…` uz jaunu, vēl neizmantotu numuru.
+- **Foto** — skat. `images/README.txt`.
 
-## Kā publicēt ar GitHub Pages
+## Kā publicēt izmaiņas
 
-1. Izveido GitHub kontu (ja vēl nav): https://github.com
-2. Izveido jaunu *repository* (piem. `augustes-darzs`), public.
-3. Augšupielādē visus failus (vai `git push`).
-4. Repository → **Settings → Pages** → *Source: Deploy from a branch* → `main` / `root` → **Save**.
-5. Pēc dažām minūtēm lapa būs pieejama: `https://<lietotājvārds>.github.io/augustes-darzs/`
+Pēc jebkuras izmaiņas:
 
-Vēlāk var pieslēgt arī savu domēnu (piem. `augustesdarzs.lv`).
+```bash
+git add -A && git commit -m "Atjaunots saturs" && git push
+```
+
+Pēc ~1 minūtes izmaiņas ir redzamas tiešsaistē. GitHub Pages pārbūvē lapu
+automātiski ikreiz, kad kaut kas tiek nosūtīts uz `main` zaru.
+
+Lapas iestatījumi: repository → **Settings → Pages** → *Deploy from a branch* →
+`main` / `root`. Vēlāk tur var pieslēgt arī savu domēnu (piem. `augustesdarzs.lv`).
 
 ---
 
-*Krāsas no logo: plūmju violets `#4A1F47`, rozā `#C96BA0`, maigi rozā `#F3EBF1`, gandrīz balts `#FAF7F4`.*
+*Krāsas: vīnsarkans `#551E2F`, akcents `#8E3148`, rozā `#C66F7E`,
+paneļi `#FCEEF0`, fons `#FDF7F9`.*
+*Burtveidoli: Cormorant Garamond (virsraksti), Nunito Sans (teksts),
+Dancing Script (paraksts).*

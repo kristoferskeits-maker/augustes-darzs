@@ -8,7 +8,8 @@
   <meta property="og:title" content="AuGustes iedvesmas dārzs">
   <meta property="og:description" content="Vieta, kur aug ne tikai ziedi, bet arī sapņi. Vairāk nekā 2000 hortenziju Saulkrastu novadā.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:image" content="https://kristoferskeits-maker.github.io/augustes-darzs/images/hero.jpg">
+  <link rel="icon" href="images/logo.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,15 +18,14 @@
 </head>
 <body>
 
-<!-- ============ AUGŠDAĻA: navigācija + hero (kopīgs attēls ar izgaismojumu) ============ -->
+<!-- ============ AUGŠDAĻA: navigācija + hero ============ -->
 <div class="top" id="top">
-  <div class="hero-img" style="background-image:url('images/hero.jpg')" role="img" aria-label="Hortenziju dārzs"></div>
+  <div class="hero-img" style="background-image:url('images/hero.jpg')" role="img" aria-label="Hortenziju dārzs vakara gaismā"></div>
 
   <header class="site-header">
     <nav class="nav container">
       <a class="brand" href="#top">
-        <span class="brand-mark">AuGustes</span>
-        <span class="brand-sub">iedvesmas dārzs</span>
+        <img class="brand-logo" src="images/logo.png" alt="AuGustes iedvesmas dārzs">
       </a>
       <button class="nav-toggle" aria-label="Izvērst izvēlni" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -34,7 +34,7 @@
         <li><a href="#stasts">Dārzs</a></li>
         <li><a href="#galerija">Galerija</a></li>
         <li><a href="#cenas">Cenas</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#buj">BUJ</a></li>
         <li><a href="#kontakti">Kontakti</a></li>
       </ul>
     </nav>
@@ -105,7 +105,7 @@
 <!-- ============ MŪSU STĀSTS ============ -->
 <section class="story" id="stasts">
   <div class="container story-inner">
-    <div class="story-img" style="background-image:url('images/story.jpg')" role="img" aria-label="Taciņa dārzā"></div>
+    <div class="story-img" style="background-image:url('images/story.jpg')" role="img" aria-label="Kolonādes un puķu dobes dārzā"></div>
     <div class="story-text">
       <p class="eyebrow">Mūsu stāsts</p>
       <h2 class="story-title">Viss sākās ar vienu<br>MILZĪGU sapni!</h2>
@@ -126,12 +126,16 @@
       </div>
     </div>
     <div class="gallery-track" id="gallery-track">
-      <figure class="g-item"><img src="images/gallery-1.jpg" alt="Hortenzijas tuvplānā" loading="lazy"></figure>
-      <figure class="g-item"><img src="images/gallery-2.jpg" alt="Dārza taciņa" loading="lazy"></figure>
-      <figure class="g-item"><img src="images/gallery-3.jpg" alt="Baltās hortenzijas" loading="lazy"></figure>
-      <figure class="g-item"><img src="images/gallery-4.jpg" alt="Ziedu detaļas" loading="lazy"></figure>
-      <figure class="g-item"><img src="images/gallery-5.jpg" alt="Dārza skats" loading="lazy"></figure>
-      <figure class="g-item"><img src="images/gallery-6.jpg" alt="Hortenziju dobes" loading="lazy"></figure>
+      <figure class="g-item"><img src="images/gallery-1.jpg" alt="Stikla māja un baltās hortenzijas" loading="lazy"></figure>
+      <figure class="g-item"><img src="images/gallery-2.jpg" alt="Kolonnas ar lustrām dārzā" loading="lazy"></figure>
+      <figure class="g-item"><img src="images/gallery-3.jpg" alt="Hortenziju dobe saulrietā" loading="lazy"></figure>
+      <figure class="g-item"><img src="images/gallery-4.jpg" alt="Miglains rīts un stikla lampas" loading="lazy"></figure>
+      <figure class="g-item"><img src="images/gallery-5.jpg" alt="Strūklaka un rozā ziedi" loading="lazy"></figure>
+      <figure class="g-item"><img src="images/gallery-6.jpg" alt="Stikla namiņš ar dekorācijām" loading="lazy"></figure>
+      <figure class="g-item"><img src="images/gallery-7.jpg" alt="Lapene ar laternām rudens krāsās" loading="lazy"></figure>
+      <figure class="g-item"><img src="images/gallery-8.jpg" alt="Pergola un puķu dobes" loading="lazy"></figure>
+      <figure class="g-item"><img src="images/gallery-9.jpg" alt="Klāts galds dārza svinībām" loading="lazy"></figure>
+      <figure class="g-item"><img src="images/gallery-10.jpg" alt="Hortenzijas rudenī" loading="lazy"></figure>
     </div>
   </div>
 </section>
@@ -166,61 +170,178 @@
   </div>
 </section>
 
-<!-- ============ FAQ ============ -->
-<section class="section" id="faq">
+<!-- ============ BUJ (biežāk uzdotie jautājumi) ============ -->
+<section class="section" id="buj">
   <div class="container faq-grid">
-    <h2 class="script-title faq-heading">FAQ</h2>
+    <h2 class="script-title faq-heading">BUJ</h2>
     <div class="faq-list">
 
-      <details class="faq-item"><summary>No cikiem līdz cikiem dārzs ir atvērts?</summary>
-        <div class="faq-body"><p>Sezonā — katru dienu 11:00–17:00, bez iepriekšējas pieteikšanās. Pēc 17:00 apmeklējums iespējams tikai iepriekš vienojoties ar saimnieci. Ziemā dārzs ir slēgts.</p></div></details>
+      <div class="faq-item">
+        <h3 class="faq-h">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="buj-a1" id="buj-q1">
+            <span>No cikiem līdz cikiem dārzs ir atvērts?</span>
+            <span class="faq-sign" aria-hidden="true"><i></i><i></i></span>
+          </button>
+        </h3>
+        <div class="faq-wrap" id="buj-a1" role="region" aria-labelledby="buj-q1">
+          <div class="faq-body"><p>Dārzs ir atvērts katru dienu no 11:00 līdz 17:00. Iepriekš pieteikties nav nepieciešams. Sezona parasti sākas 23. jūlijā un noslēdzas oktobra vidū — oktobrī viss atkarīgs no pirmajām salnām, tāpēc iesakām iepriekšējā dienā piezvanīt. Ziemā dārzs ir slēgts.</p></div>
+        </div>
+      </div>
 
-      <details class="faq-item"><summary>Kāda ir ieejas maksa?</summary>
-        <div class="faq-body"><p>Pieaugušajiem €8, senioriem (no 70 g.) un cilvēkiem ar invaliditāti €7, bērniem 7–16 g. €3, bērniem līdz 7 g. — bez maksas. Norēķini skaidrā naudā un ar karti, uz vietas. Grupu atlaižu nav.</p></div></details>
+      <div class="faq-item">
+        <h3 class="faq-h">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="buj-a2" id="buj-q2">
+            <span>Kāda ir ieejas maksa?</span>
+            <span class="faq-sign" aria-hidden="true"><i></i><i></i></span>
+          </button>
+        </h3>
+        <div class="faq-wrap" id="buj-a2" role="region" aria-labelledby="buj-q2">
+          <div class="faq-body"><p>Pieaugušajiem 8 €, senioriem no 70 gadiem un cilvēkiem ar invaliditāti 7 €, bērniem no 7 līdz 16 gadiem 3 €. Bērniem līdz 7 gadiem ieeja ir bez maksas. Maksāt var gan skaidrā naudā, gan ar karti uz vietas.</p></div>
+        </div>
+      </div>
 
-      <details class="faq-item"><summary>Vai var ņemt līdzi suni?</summary>
-        <div class="faq-body"><p>Jā, laipni gaidīti visi mājdzīvnieki. Lūdzam turēt pavadā (ja vien tas nav ļoti paklausīgs) un savākt aiz tā.</p></div></details>
+      <div class="faq-item">
+        <h3 class="faq-h">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="buj-a3" id="buj-q3">
+            <span>Vai var ņemt līdzi suni?</span>
+            <span class="faq-sign" aria-hidden="true"><i></i><i></i></span>
+          </button>
+        </h3>
+        <div class="faq-wrap" id="buj-a3" role="region" aria-labelledby="buj-q3">
+          <div class="faq-body"><p>Jā, jebkurš mīlulis ir mīļi gaidīts. Lūdzam tikai, lai tas netraucē citu viesu mieru un lai aiz viņa savāc. Ļoti paklausīgu dzīvnieku var vest arī bez pavadas.</p></div>
+        </div>
+      </div>
 
-      <details class="faq-item"><summary>Cik maksā fotosesija?</summary>
-        <div class="faq-body"><p>Fotosesija €25 + ieejas biļetes visiem dalībniekiem. Laika ierobežojuma nav; ieteicams pieteikties iepriekš.</p></div></details>
+      <div class="faq-item">
+        <h3 class="faq-h">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="buj-a4" id="buj-q4">
+            <span>Cik maksā fotosesija?</span>
+            <span class="faq-sign" aria-hidden="true"><i></i><i></i></span>
+          </button>
+        </h3>
+        <div class="faq-wrap" id="buj-a4" role="region" aria-labelledby="buj-q4">
+          <div class="faq-body"><p>Fotosesija dārzā maksā 25 € un papildus jāpērk ieejas biļetes visiem iesaistītajiem. Laika ierobežojuma nav. Tas attiecas arī uz draugu vai paziņu ar profesionālu kameru — ar biļetēm vien nepietiek. Fotografēšana ar telefonu savam priekam ir ieejas maksas ietvaros. Ieteicams pieteikties iepriekš.</p></div>
+        </div>
+      </div>
 
-      <details class="faq-item"><summary>Vai pie jums var paēst?</summary>
-        <div class="faq-body"><p>Piedāvājam dzērienus — kafiju, kakao, tēju un cidoniju sulu. Ēdiens netiek tirgots, taču savu pikniku drīkst ņemt līdzi bez papildu maksas.</p></div></details>
+      <div class="faq-item">
+        <h3 class="faq-h">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="buj-a5" id="buj-q5">
+            <span>Vai pie jums var paēst?</span>
+            <span class="faq-sign" aria-hidden="true"><i></i><i></i></span>
+          </button>
+        </h3>
+        <div class="faq-wrap" id="buj-a5" role="region" aria-labelledby="buj-q5">
+          <div class="faq-body"><p>Kafejnīcas kā tādas nav. Uz vietas var pasūtīt kafiju, kakao, tēju vai cidoniju sulu. Ēdiens netiek pārdots, bet savu ēdienu un dzērienus drīkst ņemt līdzi, un par to nav papildu samaksas.</p></div>
+        </div>
+      </div>
 
-      <details class="faq-item"><summary>Vai var rīkot kāzas, jubileju vai korporatīvo pasākumu?</summary>
-        <div class="faq-body"><p>Jā! Galda noma €25/stundā (viens 2,5 m galds, līdz 10 cilvēkiem) — piemērots dzimšanas dienām. Kolonādes pergola €250 (vienreizēja maksa) — kāzām un korporatīvajiem pasākumiem. Sazinieties ar mums, lai vienotos par detaļām.</p></div></details>
+      <div class="faq-item">
+        <h3 class="faq-h">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="buj-a6" id="buj-q6">
+            <span>Vai var rīkot kāzas, jubileju vai korporatīvo pasākumu?</span>
+            <span class="faq-sign" aria-hidden="true"><i></i><i></i></span>
+          </button>
+        </h3>
+        <div class="faq-wrap" id="buj-a6" role="region" aria-labelledby="buj-q6">
+          <div class="faq-body"><p>Jā. Galda īre ir 25 € stundā par vienu galdu — tas ir 2,5 metrus garš un pie tā var sēdēt 10 cilvēki. Kolonnu lapenes īre ir 250 € (vienreizēja maksa), un tā parasti tiek izmantota kāzām un korporatīvajiem pasākumiem. Pārējo — datumu, norisi un iespējas — saskaņojam individuāli, tāpēc rakstiet vai zvaniet.</p></div>
+        </div>
+      </div>
 
-      <details class="faq-item faq-extra"><summary>Kad ir sezona?</summary>
-        <div class="faq-body"><p>Aptuveni no 23. jūlija līdz oktobra vidum. Augstsezonā darba laiks dažkārt bijis garāks. Oktobra sākumā tas ir atkarīgs no pirmajām salnām — pirms brauciena iesakām piezvanīt iepriekšējā dienā.</p></div></details>
+      <div class="faq-item faq-extra">
+        <h3 class="faq-h">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="buj-a7" id="buj-q7">
+            <span>Vai stikla namiņš ir par papildu samaksu?</span>
+            <span class="faq-sign" aria-hidden="true"><i></i><i></i></span>
+          </button>
+        </h3>
+        <div class="faq-wrap" id="buj-a7" role="region" aria-labelledby="buj-q7">
+          <div class="faq-body"><p>Nē. Stikla namiņš ir dekoratīvs objekts, un tas nav iznomājams, taču ieiet iekšā un apskatīt kristāla ornamentus un paštaisītās dekorācijas var pavisam brīvi, bez papildu maksas.</p></div>
+        </div>
+      </div>
 
-      <details class="faq-item faq-extra"><summary>Vai iepriekš jāpiesakās?</summary>
-        <div class="faq-body"><p>Parastam apmeklējumam pieteikšanās nav vajadzīga — vienkārši brauciet ciemos. Fotosesijām un pasākumiem pieteikšanās ir ieteicama.</p></div></details>
+      <div class="faq-item faq-extra">
+        <h3 class="faq-h">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="buj-a8" id="buj-q8">
+            <span>Vai ir telts jumts un krēsli?</span>
+            <span class="faq-sign" aria-hidden="true"><i></i><i></i></span>
+          </button>
+        </h3>
+        <div class="faq-wrap" id="buj-a8" role="region" aria-labelledby="buj-q8">
+          <div class="faq-body"><p>Mums to nav. Tos iespējams noīrēt no uzņēmuma &bdquo;Teltis pasākumiem&ldquo;.</p></div>
+        </div>
+      </div>
 
-      <details class="faq-item faq-extra"><summary>Vai dārzā ir tualete?</summary>
-        <div class="faq-body"><p>Jā, tualete ir pieejama uz vietas.</p></div></details>
+      <div class="faq-item faq-extra">
+        <h3 class="faq-h">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="buj-a9" id="buj-q9">
+            <span>Kā pie jums nokļūt?</span>
+            <span class="faq-sign" aria-hidden="true"><i></i><i></i></span>
+          </button>
+        </h3>
+        <div class="faq-wrap" id="buj-a9" role="region" aria-labelledby="buj-q9">
+          <div class="faq-body"><p>Ar auto aptuveni 45 minūtes no Rīgas, pie ieejas ir bezmaksas stāvvieta. Precīzu adresi atradīsiet, meklējot &bdquo;AuGustes iedvesmas dārzs&ldquo; Google Maps, Waze vai Apple Maps. Sabiedriskais transports uz dārzu nebrauc — tuvākā pietura ir Bīriņos, 2,5 km attālumā.</p></div>
+        </div>
+      </div>
 
-      <details class="faq-item faq-extra"><summary>Vai ir piemērots bērnu ratiņiem un ratiņkrēsliem?</summary>
-        <div class="faq-body"><p>Jā, dārzs ir piemērots gan bērnu ratiņiem, gan ratiņkrēsliem.</p></div></details>
+      <div class="faq-item faq-extra">
+        <h3 class="faq-h">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="buj-a10" id="buj-q10">
+            <span>Vai grupām ir atlaide?</span>
+            <span class="faq-sign" aria-hidden="true"><i></i><i></i></span>
+          </button>
+        </h3>
+        <div class="faq-wrap" id="buj-a10" role="region" aria-labelledby="buj-q10">
+          <div class="faq-body"><p>Atlaides nav — cena ir tāda pati neatkarīgi no cilvēku skaita. Grupas var pieteikties iepriekš, bet var arī vienkārši atbraukt.</p></div>
+        </div>
+      </div>
 
-      <details class="faq-item faq-extra"><summary>Kā pie jums nokļūt un vai ir autostāvvieta?</summary>
-        <div class="faq-body"><p>Pie ieejas ir bezmaksas autostāvvieta. Sabiedriskais transports līdz dārzam nekursē — tuvākā pietura ir Bīriņi, 2,5 km attālumā. Maršrutam meklējiet "Augustes iedvesmas dārzs" Google vai Apple kartēs, vai Waze.</p></div></details>
+      <div class="faq-item faq-extra">
+        <h3 class="faq-h">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="buj-a11" id="buj-q11">
+            <span>Vai ir tualete un vai var ar bērnu ratiem?</span>
+            <span class="faq-sign" aria-hidden="true"><i></i><i></i></span>
+          </button>
+        </h3>
+        <div class="faq-wrap" id="buj-a11" role="region" aria-labelledby="buj-q11">
+          <div class="faq-body"><p>Tualete ir. Ar bērnu ratiem un ratiņkrēslu dārzā var pārvietoties.</p></div>
+        </div>
+      </div>
 
-      <details class="faq-item faq-extra"><summary>Vai pārdodat dāvanu kartes vai suvenīrus?</summary>
-        <div class="faq-body"><p>Jā, dāvanu kartes un suvenīri ir pieejami uz vietas (dažkārt var nebūt noliktavā).</p></div></details>
+      <div class="faq-item faq-extra">
+        <h3 class="faq-h">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="buj-a12" id="buj-q12">
+            <span>Cik ilgi aizņem apskate?</span>
+            <span class="faq-sign" aria-hidden="true"><i></i><i></i></span>
+          </button>
+        </h3>
+        <div class="faq-wrap" id="buj-a12" role="region" aria-labelledby="buj-q12">
+          <div class="faq-body"><p>Parasti 1–2 stundas.</p></div>
+        </div>
+      </div>
 
-      <details class="faq-item faq-extra"><summary>Vai var nomāt teltis vai krēslus?</summary>
-        <div class="faq-body"><p>Teltis un krēsli uz vietas nav pieejami — tos var nomāt no "Teltis pasākumiem". Stikla māja ir dekoratīva: tajā var brīvi ieiet, taču tā netiek iznomāta.</p></div></details>
+      <div class="faq-item faq-extra">
+        <h3 class="faq-h">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="buj-a13" id="buj-q13">
+            <span>Vai var dzirdēt stāstu par dārzu?</span>
+            <span class="faq-sign" aria-hidden="true"><i></i><i></i></span>
+          </button>
+        </h3>
+        <div class="faq-wrap" id="buj-a13" role="region" aria-labelledby="buj-q13">
+          <div class="faq-body"><p>Jā, un tas nemaksā neko. Pienāciet klāt saimniecei vai jebkuram darbiniekam un pajautājiet — pastāstīs ar prieku. Ekskursija kā atsevišķs pakalpojums nav pērkama un to nevar pasūtīt iepriekš.</p></div>
+        </div>
+      </div>
 
-      <button class="faq-more" id="faq-more">Skatīt visus jautājumus (13) <span>↓</span></button>
+      <button class="faq-more" id="faq-more" type="button">Skatīt visus jautājumus (13) <span>↓</span></button>
     </div>
   </div>
 </section>
 
 <!-- ============ KONTAKTI ============ -->
 <footer class="cta" id="kontakti">
-  <div class="container">
-    <div class="cta-panel">
-      <div class="cta-flower" style="background-image:url('images/footer-flower.jpg')" aria-hidden="true"></div>
+  <div class="cta-panel">
+    <div class="container cta-inner">
+      <div class="cta-flower" aria-hidden="true"></div>
 
       <h2 class="script-title cta-title">No sirds gaidīsim<br>ciemos! <span class="heart">♡</span></h2>
 
@@ -246,7 +367,9 @@
         <span>Atvērt maršrutu<br>Google Maps ↗</span>
       </a>
     </div>
+  </div>
 
+  <div class="container">
     <p class="cta-copy">© <span id="year"></span> AuGustes iedvesmas dārzs · Saimniece Laura Dance</p>
   </div>
 </footer>
