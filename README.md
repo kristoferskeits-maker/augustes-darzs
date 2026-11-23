@@ -54,5 +54,7 @@ Lapas iestatījumi: repository → **Settings → Pages** → *Deploy from a bra
 
 *Krāsas: vīnsarkans `#551E2F`, akcents `#8E3148`, rozā `#C66F7E`,
 paneļi `#FCEEF0`, fons `#FDF7F9`.*
-*Burtveidoli: Cormorant Garamond (virsraksti), Nunito Sans (teksts),
-Dancing Script (paraksts).*
+*Burtveidoli: Lora (virsraksti), Inter (teksts), Dancing Script (paraksts).
+Abi izvēlēti tāpēc, ka korekti attēlo latviešu burtus — mīkstinājuma komatus
+(ģ ķ ļ ņ), garumzīmes (ā ē ī ū) un čupīšus (č š ž). Iepriekšējais Cormorant
+Garamond nepareizi novietoja čupīti uz mazajiem š un č.*
