@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuGustes iedvesmas dārzs — hortenziju dārzs Saulkrastu novadā</title>
+  <meta name="description" content="Privāts hortenziju dārzs Pabažos, Saulkrastu novadā — vairāk nekā 2000 hortenziju, 60+ šķirnes. Atvērts sezonā. Fotosesijas, dzimšanas dienas, kāzas, ~45 min no Rīgas.">
+  <meta property="og:title" content="AuGustes iedvesmas dārzs">
+  <meta property="og:description" content="Vieta, kur aug ne tikai ziedi, bet arī sapņi. Vairāk nekā 2000 hortenziju Saulkrastu novadā.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Dancing+Script:wght@500;600&family=Nunito+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ AUGŠDAĻA: navigācija + hero (kopīgs attēls ar izgaismojumu) ============ -->
+<div class="top" id="top">
+  <div class="hero-img" style="background-image:url('images/hero.jpg')" role="img" aria-label="Hortenziju dārzs"></div>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#top">
+        <span class="brand-mark">AuGustes</span>
+        <span class="brand-sub">iedvesmas dārzs</span>
+      </a>
+      <button class="nav-toggle" aria-label="Izvērst izvēlni" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#stasts">Dārzs</a></li>
+        <li><a href="#galerija">Galerija</a></li>
+        <li><a href="#cenas">Cenas</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#kontakti">Kontakti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero container">
+    <div class="hero-text">
+      <!-- Sezonas statuss — skat. script.js (OVERRIDE) -->
+      <span class="pill" id="season-pill" data-status="open">
+        <span class="pill-ico">❀</span>
+        <span id="season-pill-text">Šodien atvērts 11–17</span>
+      </span>
+
+      <h1 class="hero-title">Vieta, kur aug<br>ne tikai ziedi,<br>bet arī <em>sapņi!</em></h1>
+
+      <p class="hero-sub">Vairāk nekā 2000 hortenziju, dabas skaistums<br>un mazi, nesteidzīgi mirkļi. Atbrauciet ciemos!</p>
+
+      <p class="hero-meta">
+        <span class="meta-item">
+          <svg viewBox="0 0 24 24" class="ic"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Pabaži, Saulkrastu novads
+        </span>
+        <span class="meta-dot">•</span>
+        <span class="meta-item">
+          <svg viewBox="0 0 24 24" class="ic"><path d="M5 11.5l1.4-4.1A2 2 0 0 1 8.3 6h7.4a2 2 0 0 1 1.9 1.4L19 11.5M5 11.5h14M5 11.5a1.8 1.8 0 0 0-1.8 1.8v2.4H5m14-4.2a1.8 1.8 0 0 1 1.8 1.8v2.4H19M5 15.7h14M7 14h.6M16.4 14h.6"/></svg>
+          Aptuveni 45 min no Rīgas
+        </span>
+      </p>
+    </div>
+  </section>
+</div>
+
+<!-- ============ STATISTIKA ============ -->
+<section class="stats">
+  <div class="container stats-inner">
+    <div class="stat">
+      <span class="stat-ico">❀</span>
+      <span class="stat-num">2000+</span>
+      <span class="stat-label">Hortenzijas</span>
+    </div>
+    <div class="stat">
+      <svg viewBox="0 0 24 24" class="stat-ico-svg"><path d="M5 11.5l1.4-4.1A2 2 0 0 1 8.3 6h7.4a2 2 0 0 1 1.9 1.4L19 11.5M5 11.5h14M5 11.5a1.8 1.8 0 0 0-1.8 1.8v2.4H5m14-4.2a1.8 1.8 0 0 1 1.8 1.8v2.4H19M5 15.7h14M7 14h.6M16.4 14h.6"/></svg>
+      <span class="stat-num">~45 min</span>
+      <span class="stat-label">No Rīgas</span>
+    </div>
+    <div class="stat">
+      <svg viewBox="0 0 24 24" class="stat-ico-svg"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+      <span class="stat-num">Pabaži</span>
+      <span class="stat-label">Saulkrastu novads</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KAS ŠOBRĪD NOTIEK DĀRZĀ (Lauras rediģējamā josla) ============
+     ⟶ Nomaini tekstu un datumu zemāk, kad kaut kas mainās dārzā. Nekas cits nav jāmaina.
+-->
+<section class="nowband">
+  <div class="container nowband-inner">
+    <span class="nowband-ico">❀</span>
+    <div class="nowband-text">
+      <h3>Kas skaists šobrīd notiek dārzā?</h3>
+      <p>Dārzs ziemo. Hortenzijas atpūšas, un mēs jau plānojam nākamo sezonu – tiekamies vasarā!</p>
+    </div>
+    <span class="nowband-date">Atjaunots: 23. novembrī</span>
+  </div>
+</section>
+
+<!-- ============ MŪSU STĀSTS ============ -->
+<section class="story" id="stasts">
+  <div class="container story-inner">
+    <div class="story-img" style="background-image:url('images/story.jpg')" role="img" aria-label="Taciņa dārzā"></div>
+    <div class="story-text">
+      <p class="eyebrow">Mūsu stāsts</p>
+      <h2 class="story-title">Viss sākās ar vienu<br>MILZĪGU sapni!</h2>
+      <p class="story-body">Reiz atradu vietu ar 1800 pamestām hortenzijām, un tā aizsākās mūsu ģimenes dārza stāsts. Šodien te kopā stādām, kopjam, radām un iedvesmojam.</p>
+      <p class="signature">Laura <span class="heart">♡</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIJA ============ -->
+<section class="section" id="galerija">
+  <div class="container">
+    <div class="gallery-head">
+      <h2 class="script-title">Mirkļi no mūsu dārza</h2>
+      <div class="gallery-nav">
+        <button class="g-arrow" id="g-prev" aria-label="Iepriekšējais">‹</button>
+        <button class="g-arrow" id="g-next" aria-label="Nākamais">›</button>
+      </div>
+    </div>
+    <div class="gallery-track" id="gallery-track">
+      <figure class="g-item"><img src="images/gallery-1.jpg" alt="Hortenzijas tuvplānā" loading="lazy"></figure>
+      <figure class="g-item"><img src="images/gallery-2.jpg" alt="Dārza taciņa" loading="lazy"></figure>
+      <figure class="g-item"><img src="images/gallery-3.jpg" alt="Baltās hortenzijas" loading="lazy"></figure>
+      <figure class="g-item"><img src="images/gallery-4.jpg" alt="Ziedu detaļas" loading="lazy"></figure>
+      <figure class="g-item"><img src="images/gallery-5.jpg" alt="Dārza skats" loading="lazy"></figure>
+      <figure class="g-item"><img src="images/gallery-6.jpg" alt="Hortenziju dobes" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IEEJAS MAKSA ============ -->
+<section class="section" id="cenas">
+  <div class="container">
+    <h2 class="script-title center">Ieejas maksa</h2>
+    <div class="price-cards">
+      <div class="pcard">
+        <span class="pcard-label">Bērniem</span>
+        <span class="pcard-price">3 €</span>
+        <span class="pcard-rule"></span>
+        <p class="pcard-desc">No 7 līdz 16 gadiem</p>
+        <p class="pcard-note">Līdz 7 gadiem – bez maksas</p>
+      </div>
+      <div class="pcard">
+        <span class="pcard-label">Pieaugušajiem</span>
+        <span class="pcard-price">8 €</span>
+        <span class="pcard-rule"></span>
+        <p class="pcard-desc">Ieeja dārzā</p>
+        <p class="pcard-note">Nesteidzīgai atpūtai</p>
+      </div>
+      <div class="pcard">
+        <span class="pcard-label">Senioriem</span>
+        <span class="pcard-price">7 €</span>
+        <span class="pcard-rule"></span>
+        <p class="pcard-desc">No 70 gadu vecuma</p>
+        <p class="pcard-desc">Arī cilvēkiem ar invaliditāti</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="container faq-grid">
+    <h2 class="script-title faq-heading">FAQ</h2>
+    <div class="faq-list">
+
+      <details class="faq-item"><summary>No cikiem līdz cikiem dārzs ir atvērts?</summary>
+        <div class="faq-body"><p>Sezonā — katru dienu 11:00–17:00, bez iepriekšējas pieteikšanās. Pēc 17:00 apmeklējums iespējams tikai iepriekš vienojoties ar saimnieci. Ziemā dārzs ir slēgts.</p></div></details>
+
+      <details class="faq-item"><summary>Kāda ir ieejas maksa?</summary>
+        <div class="faq-body"><p>Pieaugušajiem €8, senioriem (no 70 g.) un cilvēkiem ar invaliditāti €7, bērniem 7–16 g. €3, bērniem līdz 7 g. — bez maksas. Norēķini skaidrā naudā un ar karti, uz vietas. Grupu atlaižu nav.</p></div></details>
+
+      <details class="faq-item"><summary>Vai var ņemt līdzi suni?</summary>
+        <div class="faq-body"><p>Jā, laipni gaidīti visi mājdzīvnieki. Lūdzam turēt pavadā (ja vien tas nav ļoti paklausīgs) un savākt aiz tā.</p></div></details>
+
+      <details class="faq-item"><summary>Cik maksā fotosesija?</summary>
+        <div class="faq-body"><p>Fotosesija €25 + ieejas biļetes visiem dalībniekiem. Laika ierobežojuma nav; ieteicams pieteikties iepriekš.</p></div></details>
+
+      <details class="faq-item"><summary>Vai pie jums var paēst?</summary>
+        <div class="faq-body"><p>Piedāvājam dzērienus — kafiju, kakao, tēju un cidoniju sulu. Ēdiens netiek tirgots, taču savu pikniku drīkst ņemt līdzi bez papildu maksas.</p></div></details>
+
+      <details class="faq-item"><summary>Vai var rīkot kāzas, jubileju vai korporatīvo pasākumu?</summary>
+        <div class="faq-body"><p>Jā! Galda noma €25/stundā (viens 2,5 m galds, līdz 10 cilvēkiem) — piemērots dzimšanas dienām. Kolonādes pergola €250 (vienreizēja maksa) — kāzām un korporatīvajiem pasākumiem. Sazinieties ar mums, lai vienotos par detaļām.</p></div></details>
+
+      <details class="faq-item faq-extra"><summary>Kad ir sezona?</summary>
+        <div class="faq-body"><p>Aptuveni no 23. jūlija līdz oktobra vidum. Augstsezonā darba laiks dažkārt bijis garāks. Oktobra sākumā tas ir atkarīgs no pirmajām salnām — pirms brauciena iesakām piezvanīt iepriekšējā dienā.</p></div></details>
+
+      <details class="faq-item faq-extra"><summary>Vai iepriekš jāpiesakās?</summary>
+        <div class="faq-body"><p>Parastam apmeklējumam pieteikšanās nav vajadzīga — vienkārši brauciet ciemos. Fotosesijām un pasākumiem pieteikšanās ir ieteicama.</p></div></details>
+
+      <details class="faq-item faq-extra"><summary>Vai dārzā ir tualete?</summary>
+        <div class="faq-body"><p>Jā, tualete ir pieejama uz vietas.</p></div></details>
+
+      <details class="faq-item faq-extra"><summary>Vai ir piemērots bērnu ratiņiem un ratiņkrēsliem?</summary>
+        <div class="faq-body"><p>Jā, dārzs ir piemērots gan bērnu ratiņiem, gan ratiņkrēsliem.</p></div></details>
+
+      <details class="faq-item faq-extra"><summary>Kā pie jums nokļūt un vai ir autostāvvieta?</summary>
+        <div class="faq-body"><p>Pie ieejas ir bezmaksas autostāvvieta. Sabiedriskais transports līdz dārzam nekursē — tuvākā pietura ir Bīriņi, 2,5 km attālumā. Maršrutam meklējiet "Augustes iedvesmas dārzs" Google vai Apple kartēs, vai Waze.</p></div></details>
+
+      <details class="faq-item faq-extra"><summary>Vai pārdodat dāvanu kartes vai suvenīrus?</summary>
+        <div class="faq-body"><p>Jā, dāvanu kartes un suvenīri ir pieejami uz vietas (dažkārt var nebūt noliktavā).</p></div></details>
+
+      <details class="faq-item faq-extra"><summary>Vai var nomāt teltis vai krēslus?</summary>
+        <div class="faq-body"><p>Teltis un krēsli uz vietas nav pieejami — tos var nomāt no "Teltis pasākumiem". Stikla māja ir dekoratīva: tajā var brīvi ieiet, taču tā netiek iznomāta.</p></div></details>
+
+      <button class="faq-more" id="faq-more">Skatīt visus jautājumus (13) <span>↓</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKTI ============ -->
+<footer class="cta" id="kontakti">
+  <div class="container">
+    <div class="cta-panel">
+      <div class="cta-flower" style="background-image:url('images/footer-flower.jpg')" aria-hidden="true"></div>
+
+      <h2 class="script-title cta-title">No sirds gaidīsim<br>ciemos! <span class="heart">♡</span></h2>
+
+      <div class="cta-divider" aria-hidden="true"></div>
+
+      <div class="cta-rows">
+        <p class="cta-row">
+          <svg viewBox="0 0 24 24" class="ic"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span>AuGustes iedvesmas dārzs<br><small>Pabaži, Sējas pagasts, Saulkrastu novads</small></span>
+        </p>
+        <p class="cta-row">
+          <svg viewBox="0 0 24 24" class="ic"><path d="M5 11.5l1.4-4.1A2 2 0 0 1 8.3 6h7.4a2 2 0 0 1 1.9 1.4L19 11.5M5 11.5h14M5 11.5a1.8 1.8 0 0 0-1.8 1.8v2.4H5m14-4.2a1.8 1.8 0 0 1 1.8 1.8v2.4H19M5 15.7h14M7 14h.6M16.4 14h.6"/></svg>
+          <span>Aptuveni 45 minūtes no Rīgas</span>
+        </p>
+        <p class="cta-row">
+          <svg viewBox="0 0 24 24" class="ic"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11 11 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11 11 0 0 0 .56 3.5 1 1 0 0 1-.24 1z"/></svg>
+          <span><a href="tel:+37126401764">26401764</a> · <a href="mailto:iedvesmasdarzs@gmail.com">iedvesmasdarzs@gmail.com</a><br><small>Atbildam arī WhatsApp un Messenger</small></span>
+        </p>
+      </div>
+
+      <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&query=Augustes+iedvesmas+d%C4%81rzs" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" class="ic"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        <span>Atvērt maršrutu<br>Google Maps ↗</span>
+      </a>
+    </div>
+
+    <p class="cta-copy">© <span id="year"></span> AuGustes iedvesmas dārzs · Saimniece Laura Dance</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
