@@ -15,10 +15,13 @@ Galerija (karuselis):
   gallery-8.jpg    — pergola un puķu dobes
   gallery-9.jpg    — klāts galds svinībām
   gallery-10.jpg   — hortenzijas rudenī
+  gallery-11.jpg   — kolonnas un dobes
+
+Portrets:
+  laura.jpg        — Laura sadaļā "Mūsu stāsts" (vertikāls, 4:5)
 
 Lielie attēli:
   hero.jpg            — galvenais attēls augšā pa labi (1800 px plats)
-  story.jpg           — attēls pie "Mūsu stāsts" (1200 px plats)
   footer-flower.webp  — zieds kājenes kreisajā stūrī
                         (caurspīdīgs, malas izplūst — tāpēc .webp, nevis .jpg)
 

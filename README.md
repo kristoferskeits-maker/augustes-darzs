@@ -19,6 +19,10 @@ Nav ne datubāzes, ne "build" soļa — ko ieraksti failā, tas parādās lapā.
 
 - **Teksts** (cenas, kontakti, jautājumi) — atver `index.html`, atrodi vajadzīgo
   sadaļu (katrai ir komentārs, piem. `<!-- IEEJAS MAKSA -->`) un labo tekstu.
+- **Darba laiks un sezonas datumi** — `index.html` sadaļā
+  `<!-- DARBA LAIKS + KO DRĪKST -->`. Tur ir gan laiks (11:00–17:00), gan
+  sezonas datumi, gan saraksts "Jūs esat laipni gaidīti…". Ja maini sezonas
+  datumus, nomaini tos arī `script.js` (skat. nākamo punktu).
 - **Sezonas statuss** (uzraksts hero daļā) — `script.js` rindā
   `const OVERRIDE = "AUTO";`. Iespējamās vērtības:
   - `"AUTO"` — aprēķinās pēc datuma: atvērts 23. jūlijs–15. oktobris,
